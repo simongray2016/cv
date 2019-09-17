@@ -1,0 +1,244 @@
+$XS: 576px;
+$SM: 768px;
+$MD: 992px;
+$XL: 1200px;
+
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin reponsive($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (max-width: $XL) {
+      @content;
+    }
+  } @else {
+    @warn "`{$canvas}` isn't $canvas";
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #100e17;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.my-navbar {
+  margin-top: 0;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  transition: all 0.5s;
+  &.headerClass {
+    padding: 10px 0;
+    background-color: #1e1e24 !important;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1) !important;
+  }
+  .navbar {
+    width: 800px;
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        .nav-item {
+          a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            display: block;
+            &:focus {
+              border-bottom: 1px solid white;
+            }
+            &:hover {
+              color: #be1645;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include reponsive(XS) {
+    padding-bottom: 10px;
+  }
+}
+
+.my-info {
+  width: 80%;
+  margin: 0 auto;
+  padding: 180px 0;
+  .row {
+    .info {
+      span {
+        padding: 10px 30px;
+        background-color: #be1645;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 65px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 30px;
+      }
+      ul {
+        li {
+          list-style-type: none;
+          padding-bottom: 15px;
+          &:hover i {
+            color: #be1645;
+            transition: 0.5s;
+          }
+          i {
+            display: inline-block;
+            width: 25px;
+          }
+        }
+      }
+      .social-icon {
+        display: flex;
+        li {
+          i {
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+            &:hover {
+              background-color: #fff;
+              transition: all 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .my-img {
+    .img {
+      margin: 0 50px;
+      margin-top: 50px;
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        border: 20px solid black;
+      }
+      @include reponsive(XL) {
+        margin: 0 70px;
+        margin-top: 50px;
+      }
+      @include reponsive(MD) {
+        margin: 50px 20px;
+      }
+      @include reponsive(SM) {
+        margin: 50px 0px;
+      }
+      @include reponsive(XS) {
+        margin: 20px 70px;
+      }
+    }
+  }
+  @include reponsive(XL) {
+    width: 90%;
+    .row {
+      .info {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  @include reponsive(MD) {
+    padding: 120px 0;
+  }
+  @include reponsive(XS) {
+    .row {
+      .info {
+        text-align: center;
+        .social-icon {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.about-me {
+  width: 80%;
+  margin: 0 auto;
+  img {
+    max-width: 100%;
+  }
+  .content {
+    padding-left: 50px;
+    font-weight: 600;
+    h1 {
+      font-size: 32px;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    ul {
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 6px;
+        margin-bottom: 10px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        border: 1px solid #be1645;
+      }
+    }
+  }
+  @include reponsive(XL) {
+    width: 90%;
+  }
+  @include reponsive(XS) {
+    .content {
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
+}
