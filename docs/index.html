@@ -11,7 +11,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=vietnamese" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
@@ -23,23 +23,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#">Giới thiệu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#">Học vấn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experiences</a>
+            <a class="nav-link" href="#">Kỹ năng</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Liên hệ</a>
           </li>
         </ul>
       </div>
@@ -47,10 +47,10 @@
   </section>
   <section class="my-info" id="home" data-aos="fade-up">
     <div class="row">
-      <div class="col-md-6 col-sm-6 info">
+      <div class="col-md-6 col-xs-12 col-sm-6 order-2 order-sm-1 info">
         <span data-aos="fade-up">Hello I'm</span>
         <h1 data-aos="fade-up">Trương Minh Triết</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Fresher Front-end Developer</h2>
         <ul>
           <li>
             <i class="fa fa-envelope"></i>
@@ -66,14 +66,16 @@
           </li>
         </ul>
         <ul class="social-icon">
-          <li><i class="fa fa-facebook"></i></li>
-          <li><i class="fa fa-twitter"></i></li>
-          <li><i class="fa fa-github"></i></li>
+          <li><a target="_tab" href="https://www.facebook.com/simongray201"><i class="fa fa-facebook"></i></a></li>
+          <li><a target="_tab" href="https://github.com/simongray2016"s><i class="fa fa-twitter"></i></a></li>
+          <li><a target="_tab" href="https://github.com/simongray2016"><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
-      <div class="col-md-6 col-sm-6 my-img">
+      <div class="col-md-6 col-xs-12 col-sm-6 order-1 order-sm-2 my-img">
         <div class="img">
-          <img src="./img/hero.png" alt="">
+          <img
+            src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.0-9/53018031_834593453545634_2355899839436292096_n.jpg?_nc_cat=107&_nc_oc=AQlR9vEJb6s2CvvMfRSh4l7D0UgJRD_SDQqx-kyjyO9iLwEqpiirzHjr_6xGE1azuS6lLQrVz9BqiJ6vX7u-XqKr&_nc_ht=scontent.fsgn3-1.fna&oh=5dd2b990d48f5a0e887a64550f16f3fe&oe=5DF81F5A"
+            alt="">
         </div>
       </div>
     </div>
@@ -84,18 +86,189 @@
         <img src="./img/ab-img.png" alt="">
       </div>
       <div class="col-md-6 content">
-        <h1>About Me</h1>
-        <p>Hello, I’m a Patrick, web-developer based on Paris. I have rich experience in web site design & building and
-          customization. Also I am good at</p>
+        <h1>Giới thiệu</h1>
+        <p>Là một fresher front-end developer, muốn tìm được một công việc phù hợp với kỹ năng hiện tại để phát triển
+          bản thân, tích lũy kinh nghiệm để trở thành một junior developer thực thụ.</p>
         <ul>
           <li>html</li>
           <li>css</li>
           <li>scss</li>
           <li>Javascript</li>
-          <li>jQuery</li>
-          <li>Angular</li>
           <li>React</li>
+          <li>Redux</li>
         </ul>
+      </div>
+    </div>
+  </section>
+  <section class="timeline" data-aos="fade-up">
+    <h1>Học vấn</h1>
+    <div class="timeline-group">
+      <div class="timeline-box">
+        <div class="timeline-date">
+          09/2017
+        </div>
+        <div class="timeline-content">
+          <h4>Cao đẳng kỹ thuật Cao Thắng</h4>
+          <p>Chuyên ngành Công nghệ thông tin</p>
+        </div>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-date">
+          09/2018
+        </div>
+        <div class="timeline-content">
+          <p>Nghỉ học vì lí do cá nhân</p>
+        </div>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-date">
+          11/2018
+        </div>
+        <div class="timeline-content">
+          <h4>CyberSoft Academy</h4>
+          <p>Khóa nền tảng tư duy lập trình, lập trình hướng đối tượng OOP</p>
+        </div>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-date">
+          01/2019
+        </div>
+        <div class="timeline-content">
+          <h4>CyberSoft Academy</h4>
+          <p>Khóa lập trình Front-end chuyên nghiệp</p>
+        </div>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-date">
+          08/2019
+        </div>
+        <div class="timeline-content">
+          <h4>HVCG Software</h4>
+          <p>Khóa lập trình Front-end với ReactJs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" data-aos="fade-up">
+    <h1>Kỹ năng</h1>
+    <div class="col col-xl-6 col-lg-8 col-md-8 col-sm-10 technical">
+      <div class="parcial">
+        <div class="info d-flex justify-content-between">
+          <div class="name">Javascript</div>
+          <div class="percentargem-num">80%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="percentargem"></div>
+        </div>
+      </div>
+      <div class="parcial">
+        <div class="info d-flex justify-content-between">
+          <div class="name">Html</div>
+          <div class="percentargem-num">90%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="percentargem"></div>
+        </div>
+      </div>
+      <div class="parcial">
+        <div class="info d-flex justify-content-between">
+          <div class="name">Css</div>
+          <div class="percentargem-num">86%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="percentargem"></div>
+        </div>
+      </div>
+      <div class="parcial">
+        <div class="info d-flex justify-content-between">
+          <div class="name">Scss</div>
+          <div class="percentargem-num">80%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="percentargem"></div>
+        </div>
+      </div>
+      <div class="parcial">
+        <div class="info d-flex justify-content-between">
+          <div class="name">ReactJs</div>
+          <div class="percentargem-num">75%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="percentargem"></div>
+        </div>
+      </div>
+      <div class="parcial">
+        <div class="info d-flex justify-content-between">
+          <div class="name">Git</div>
+          <div class="percentargem-num">50%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="percentargem"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="project" data-aos="fade-up">
+    <h1>Project</h1>
+    <div class="project-container">
+      <div class="item">
+        <div class="interface">
+          <h4>Todoist</h4>
+          <p>React-Redux</p>
+          <a target="_tab" href="https://simongray2016.github.io/to-do-ist/"></a>
+        </div>
+        <img src="https://androidcommunity.com/wp-content/uploads/2015/09/todoist-600x315.png">
+      </div>
+      <div class="item">
+        <div class="interface">
+          <h4>Meetup</h4>
+          <p>Template</p>
+          <a target="_tab" href="https://simongray2016.github.io/meetup/"></a>
+        </div>
+        <img src="https://secure.meetup.com/s/img/0/logo/svg/logo--script.svg">
+      </div>
+      <div class="item">
+        <div class="interface">
+          <h4>Movie Start</h4>
+          <p>Template</p>
+          <a target="_tab" href="https://simongray2016.github.io/movie-start-template/"></a>
+        </div>
+        <img src="./img/movie-start.png">
+      </div>
+    </div>
+  </section>
+  <section class="contact" data-aos="fade-up">
+    <h1>
+      Liên hệ
+    </h1>
+    <div class="contact-container">
+      <div class="contact-item">
+        <div class="icon">
+          <i class="fa fa-location-arrow"></i>
+        </div>
+        <div class="info">
+          <h4>Địa chỉ</h4>
+          <p>338/16 Nguyễn Xí, phường 13, quận Bình Thạnh, TP.HCM</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">
+          <i class="fa fa-envelope-o"></i>
+        </div>
+        <div class="info">
+          <h4>Email</h4>
+          <p>simongray2016@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="info">
+          <h4>Phone</h4>
+          <p>034 369 5666</p>
+        </div>
       </div>
     </div>
   </section>
@@ -126,9 +299,29 @@
 
     });
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./jquery/jquery-circle-progress/dist/circle-progress.min.js"></script>
+  <script>
+    $('#test').circleProgress({
+      value: 0.75,
+      size: 100,
+      fill: {
+        color: "#be1645",
+      },
+      emptyFill: "rgba(199, 198, 198, .6)",
+      reverse: true,
+      thickness: 5,
+      animation: false,
+    });
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
