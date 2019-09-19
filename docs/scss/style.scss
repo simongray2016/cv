@@ -198,17 +198,17 @@ body {
         transform: scale(0.6);
       }
       @include reponsive(XL) {
-        margin: 0 70px;
+        margin: 0 auto;
         margin-top: 50px;
       }
       @include reponsive(MD) {
-        margin: 50px 20px;
+        margin: 50px auto;
       }
       @include reponsive(SM) {
-        margin: 50px 0px;
+        margin: 50px auto;
       }
       @include reponsive(XS) {
-        margin: 20px 70px;
+        margin: 20px auto;
         padding-bottom: 250px;
       }
     }
@@ -595,7 +595,7 @@ body {
   }
   @include reponsive(SM) {
     .contact-container {
-      grid-template-columns: 400px;
+      grid-template-columns: 1fr;
       grid-row-gap: 20px;
       justify-content: center;
     }

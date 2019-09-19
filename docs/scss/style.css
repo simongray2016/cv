@@ -128,17 +128,17 @@ body {
       transform: scale(0.6); }
     @media only screen and (max-width: 1140px) {
       .my-info .my-img .img {
-        margin: 0 70px;
+        margin: 0 auto;
         margin-top: 50px; } }
     @media only screen and (max-width: 960px) {
       .my-info .my-img .img {
-        margin: 50px 20px; } }
+        margin: 50px auto; } }
     @media only screen and (max-width: 720px) {
       .my-info .my-img .img {
-        margin: 50px 0px; } }
+        margin: 50px auto; } }
     @media only screen and (max-width: 540px) {
       .my-info .my-img .img {
-        margin: 20px 70px;
+        margin: 20px auto;
         padding-bottom: 250px; } }
   @media only screen and (max-width: 1140px) {
     .my-info {
@@ -439,7 +439,7 @@ body {
     .contact {
       padding-bottom: 50px; }
       .contact .contact-container {
-        grid-template-columns: 400px;
+        grid-template-columns: 1fr;
         grid-row-gap: 20px;
         justify-content: center; } }
 
