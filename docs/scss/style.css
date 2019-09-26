@@ -262,17 +262,19 @@ body {
     .skills .technical .parcial {
       margin-bottom: 25px; }
       .skills .technical .parcial:first-child .progress-bar .percentargem {
-        width: 70%; }
+        width: 60%; }
       .skills .technical .parcial:nth-child(2) .progress-bar .percentargem {
         width: 80%; }
       .skills .technical .parcial:nth-child(3) .percentargem {
-        width: 80%; }
+        width: 70%; }
       .skills .technical .parcial:nth-child(4) .percentargem {
         width: 70%; }
       .skills .technical .parcial:nth-child(5) .percentargem {
-        width: 75%; }
+        width: 50%; }
       .skills .technical .parcial:nth-child(6) .percentargem {
         width: 50%; }
+      .skills .technical .parcial:nth-child(7) .percentargem {
+        width: 40%; }
       .skills .technical .parcial .info {
         margin-bottom: 5px; }
         .skills .technical .parcial .info .name {
