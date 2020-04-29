@@ -296,7 +296,7 @@ body {
       height: 100%;
       width: 4px;
       background: #be1645;
-      left: 33px;
+      left: 67px;
       z-index: -1;
       position: absolute;
     }
@@ -305,6 +305,7 @@ body {
       align-items: center;
       margin-bottom: 30px;
       position: relative;
+      white-space: nowrap;
       &::before {
         content: "";
         width: 100%;
@@ -365,38 +366,18 @@ body {
     margin-top: 50px;
     .parcial {
       margin-bottom: 25px;
-      &:first-child {
+      &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(6), &:nth-child(8) {
         .progress-bar {
           .percentargem {
             width: 70%;
           }
         }
       }
-      &:nth-child(2) {
+      &:nth-child(4),  &:nth-child(5), &:nth-child(6), &:nth-child(7) {
         .progress-bar {
           .percentargem {
-            width: 80%;
+            width: 60%;
           }
-        }
-      }
-      &:nth-child(3) {
-        .percentargem {
-          width: 80%;
-        }
-      }
-      &:nth-child(4) {
-        .percentargem {
-          width: 70%;
-        }
-      }
-      &:nth-child(5) {
-        .percentargem {
-          width: 75%;
-        }
-      }
-      &:nth-child(6) {
-        .percentargem {
-          width: 50%;
         }
       }
       .info {
@@ -435,22 +416,20 @@ body {
   }
   .project-container {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px 250px;
     justify-content: space-between;
     grid-column-gap: 10px;
+    grid-row-gap: 20px;
     .item {
-      height: 230px;
+      height: 120px;
       padding: 0;
       overflow: hidden;
-      background: #fff;
       z-index: auto;
-      border-radius: 10px;
       position: relative;
       .interface {
         position: absolute;
         top: 0;
         left: 0;
-        border-radius: 8px;
         z-index: 2;
         width: 100%;
         height: 100%;
@@ -463,6 +442,7 @@ body {
           background: rgba(173, 21, 64, 0.85);
           a {
             opacity: 1;
+            z-index: 1;
           }
           h4 {
             opacity: 1;
@@ -485,6 +465,8 @@ body {
           display: block;
           width: 110%;
           height: 110%;
+          position: absolute;
+          z-index: -1;
         }
         h4 {
           color: #fff;
@@ -517,11 +499,11 @@ body {
       }
       img {
         position: absolute;
-        max-width: 230px;
+        max-width: 250px;
         height: auto;
-        top: 25%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
         z-index: 1;
       }
     }
